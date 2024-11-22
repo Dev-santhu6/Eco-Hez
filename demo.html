@@ -1,0 +1,2792 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Diwali Wishes</title>
+<style>
+ 
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+
+
+  .wish-select {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #FFD700;
+    color: #121212;
+    cursor: pointer;
+  }
+
+
+  .diwali-wish {
+    font-size: 3rem;
+    color: #FFD700;
+    animation: flicker 1.5s infinite alternate;
+    text-align: center;
+    z-index: 2;
+    margin-top: 20px;
+  }
+  
+  @keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; transform: scale(1.05); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+ 
+  .fireworks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+
+  .firework {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ff4d4d, #ff9933, #fff, #ffcc33);
+    opacity: 0.8;
+    animation: explode 2s ease-out forwards;
+  }
+
+  @keyframes explode {
+    0% {
+      transform: scale(0.1);
+      opacity: 1;
+    }
+    80% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<select class="wish-select" id="wishSelect" onchange="updateWish()">
+  <option value="Wishing you a joyful and prosperous Diwali! 🎇">Wishing you a joyful and prosperous Diwali! 🎇</option>
+  <option value="May this Diwali bring joy, health, and wealth to you! 🪔">May this Diwali bring joy, health, and wealth to you! 🪔</option>
+  <option value="Happy Diwali to you and your loved ones! ✨">Happy Diwali to you and your loved ones! ✨</option>
+  <option value="Let this Diwali illuminate your life with lights and colors! 🎆">Let this Diwali illuminate your life with lights and colors! 🎆</option>
+  <option value="Sending love, light, and happiness this Diwali! 🎉">Sending love, light, and happiness this Diwali! 🎉</option>
+</select>
+
+
+<span class="diwali-wish" id="diwaliWish">Wishing you a joyful and prosperous Diwali! 🎇</div>
+
+<div class="fireworks"></div>
+
+<script>
+  const diwaliWish = document.getElementById('diwaliWish');
+  const wishSelect = document.getElementById('wishSelect');
+  const fireworksContainer = document.querySelector('.fireworks');
+
+  function updateWish() {
+    diwaliWish.textContent = wishSelect.value;
+  }
+
+
+  function createFirework() {
+    const firework = document.createElement('div');
+    firework.classList.add('firework');
+    
+    const size = Math.random() * 30 + 20;  
+    firework.style.width = `${size}px`;
+    firework.style.height = `${size}px`;
+
+   
+    firework.style.top = `${Math.random() * 100}%`;
+    firework.style.left = `${Math.random() * 100}%`;
+
+    fireworksContainer.appendChild(firework);
+
+    
+    firework.addEventListener('animationend', () => {
+      firework.remove();
+    });
+  }
+
+ 
+  setInterval(createFirework, 300);
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Text Background</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+ 
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .video-bg {
+    margin-top: 150px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .text {
+    font-size: 5rem;
+  position: absolute;
+
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background-color: #000; 
+  color: #fff; 
+  font-weight: 900;
+  font-size: 100px;
+  font-family:'Courier New', Courier, monospace;
+  mix-blend-mode: multiply; 
+  user-select: none; 
+} 
+  .container {
+  position: relative;
+  height: 100vh;
+}
+</style>
+</head>
+<body>
+
+ <div class="container"></div>>
+<video class="video-bg" autoplay loop muted playsinline id="backgroundVideo">
+  <source src="./z3.mp4" type="video/mp4">
+  </video>
+<div class="text">DIWALI WISHES</div>
+</div>
+
+<script>
+  const video = document.getElementById('backgroundVideo');
+  video.playbackRate = 4; 
+</script>
+</body>
+</html> -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Overlay</title>
+<style>
+  .image-container {
+    position: relative;
+    width: 300px;
+  }
+
+  .image-container img.background {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .image-container img.overlay {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 50%;
+    opacity: 0.8;
+  }
+</style>
+</head>
+<body>
+
+<div class="image-container">
+  <img src="./moter.png" alt="Background Image" class="background">
+  <img src="./10.png" alt="Overlay Image" class="overlay">
+</div>
+
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Box</title>
+  <style>
+    .chat-box {
+      width: 300px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #c58181;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    .chat-header {
+      background: #1497ee;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .chat-body {
+      padding: 10px;
+      max-height: 250px;
+      overflow-y: auto;
+      font-size: 0.9em;
+    }
+
+    .message {
+      padding: 8px;
+      border-radius: 10px;
+      margin: 5px 0;
+    }
+    .user-message {
+      background: #e0e0e0;
+      align-self: flex-end;
+      text-align: right;
+    }
+    .bot-message {
+      background: #1497ee;
+      color: #fff;
+    }
+
+    .faq {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .faq-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .faq-list li {
+      color: #0077cc;
+      cursor: pointer;
+      margin: 5px 0;
+    }
+
+    .chat-input {
+      display: flex;
+      border-top: 1px solid #ddd;
+    }
+    .chat-input input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      outline: none;
+    }
+    .chat-input button {
+      padding: 10px;
+      background: #1497ee;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="chat-box">
+  <div class="chat-header">Chat with Us</div>
+  <div class="chat-body" id="chatBody">
+    <div class="message bot-message">Hello! How can I help you today?</div>
+    <div class="faq">
+      Frequently Asked Questions:
+      <ul class="faq-list">
+        <li onclick="sendFAQ('What are your working hours?')">What are your working hours?</li>
+        <li onclick="sendFAQ('How can I contact support?')">How can I contact support?</li>
+        <li onclick="sendFAQ('Where are you located?')">Where are you located?</li>
+      </ul>
+    </div>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type your message here..." onkeypress="handleKeyPress(event)">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script>
+  const responses = {
+    "What are your working hours?": "We are open Monday to Friday, 9 AM to 5 PM.",
+    "How can I contact support?": "You can contact our support at support@example.com.",
+    "Where are you located?": "Our main office is located at 123 Example Street, City.",
+  };
+
+  function sendMessage() {
+    const userInput = document.getElementById("userInput").value;
+    if (userInput.trim() === "") return; 
+
+    addMessage(userInput, "user-message");
+    document.getElementById("userInput").value = "";
+
+    if (responses[userInput]) {
+      setTimeout(() => addMessage(responses[userInput], "bot-message"), 500);
+    } else {
+      setTimeout(() => addMessage("I'm here to help! Please clarify your question.", "bot-message"), 500);
+    }
+  }
+
+  function addMessage(text, className) {
+    const message = document.createElement("div");
+    message.className = `message ${className}`;
+    message.textContent = text;
+    document.getElementById("chatBody").appendChild(message);
+    document.getElementById("chatBody").scrollTop = document.getElementById("chatBody").scrollHeight;
+  }
+
+  function sendFAQ(question) {
+    document.getElementById("userInput").value = question;
+    sendMessage();
+  }
+
+   
+
+ 
+   
+    function handleKeyPress(event) {
+      if (event.key === 'Enter') {
+        sendMessage();
+      }
+    }
+
+
+  </script>
+
+</body>
+</html>
+ -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Finger Gesture Controlled Image Slider</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .slider {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .slide {
+            min-width: 100%;
+        }
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="./Asset/10.png" alt="Slide 1"></div>
+            <div class="slide"><img src="./Asset/grade1.jpg" alt="Slide 2"></div>
+            <div class="slide"><img src="./Asset/grade6.jpg" alt="Slide 3"></div>
+            <div class="slide"><img src="./Asset/grade6.jpg" alt="Slide 4"></div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script>
+        const slider = document.querySelector('.slides');
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+
+        const hands = new Hands({
+            locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`
+        });
+        hands.setOptions({
+            maxNumHands: 1,
+            modelComplexity: 1,
+            minDetectionConfidence: 0.7,
+            minTrackingConfidence: 0.7
+        });
+
+        let prevX = null;
+
+        hands.onResults(onResults);
+
+        const videoElement = document.createElement("video");
+        const camera = new Camera(videoElement, {
+            onFrame: async () => {
+                await hands.send({ image: videoElement });
+            },
+            width: 640,
+            height: 480
+        });
+        camera.start();
+
+        function onResults(results) {
+            if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
+                const landmarks = results.multiHandLandmarks[0];
+
+                const indexFingerTip = landmarks[8];
+                const middleFingerTip = landmarks[12];
+
+                const avgX = (indexFingerTip.x + middleFingerTip.x) / 2;
+
+                if (prevX !== null) {
+                    if (avgX < prevX - 0.05) {
+                        slideLeft();
+                    } else if (avgX > prevX + 0.05) {
+                        slideRight();
+                    }
+                }
+                prevX = avgX;
+            }
+        }
+
+        function slideLeft() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateSlider();
+        }
+
+        function slideRight() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlider();
+        }
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particle Network Effect</title>
+    <style>
+    .animated-button {
+  position: relative;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  border: 3px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: linear-gradient(#fff, #fff), conic-gradient(red, blue);
+  background-size: 100% 100%, 200% 200%;
+  background-position: center;
+  animation: borderAnimation 4s linear infinite;
+}
+
+.animated-button:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+    </style>
+</head>
+<body>
+  <button class="animated-button">
+    Click Me
+  </button>
+  
+</body>
+</html> -->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Box</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .ai-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background: #1497ee;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      color: #fff;
+      font-size: 24px;
+    }
+
+    .chat-box {
+      width: 300px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #c58181;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      display: none;
+    }
+
+    .chat-header {
+      background: #1497ee;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .close-icon {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .chat-body {
+      padding: 10px;
+      max-height: 250px;
+      overflow-y: auto;
+      font-size: 0.9em;
+    }
+
+    .message {
+      padding: 8px;
+      border-radius: 10px;
+      margin: 5px 0;
+    }
+
+    .user-message {
+      background: #e0e0e0;
+      align-self: flex-end;
+      text-align: right;
+    }
+
+    .bot-message {
+      background: #1497ee;
+      color: #fff;
+    }
+
+    .faq {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .faq-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .faq-list li {
+      color: #0077cc;
+      cursor: pointer;
+      margin: 5px 0;
+    }
+
+    .chat-input {
+      display: flex;
+      border-top: 1px solid #ddd;
+    }
+
+    .chat-input input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      outline: none;
+    }
+
+    .chat-input button {
+      padding: 10px;
+      background: #1497ee;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="ai-icon" onclick="toggleChatBox()">💬</div>
+
+<div class="chat-box" id="chatBox">
+  <div class="chat-header">
+    Chat with Us
+    <span class="close-icon" onclick="toggleChatBox()">✖</span>
+  </div>
+  <div class="chat-body" id="chatBody">
+    <div class="message bot-message">Hello! How can I help you today?</div>
+    <div class="faq">
+      Frequently Asked Questions:
+      <ul class="faq-list">
+        <li onclick="sendFAQ('What are your working hours?')">What are your working hours?</li>
+        <li onclick="sendFAQ('How can I contact support?')">How can I contact support?</li>
+        <li onclick="sendFAQ('Where are you located?')">Where are you located?</li>
+      </ul>
+    </div>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type your message here..." onkeypress="handleKeyPress(event)">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script>
+  function toggleChatBox() {
+    const chatBox = document.getElementById("chatBox");
+    const aiIcon = document.querySelector(".ai-icon");
+    if (chatBox.style.display === "none") {
+      chatBox.style.display = "block";
+      aiIcon.style.display = "none";
+    } else {
+      chatBox.style.display = "none";
+      aiIcon.style.display = "flex";
+    }
+  }
+
+  const responses = {
+    "What are your working hours?": "We are open Monday to Friday, 9 AM to 5 PM.",
+    "How can I contact support?": "You can contact our support at support@example.com.",
+    "Where are you located?": "Our main office is located at 123 Example Street, City."
+  };
+
+  function sendMessage() {
+    const userInput = document.getElementById("userInput").value;
+    if (userInput.trim() === "") return;
+
+    addMessage(userInput, "user-message");
+    document.getElementById("userInput").value = "";
+
+    const howMuchPattern = /how\s*much/i;
+
+    if (howMuchPattern.test(userInput)) {
+      setTimeout(() => addMessage("1000", "bot-message"), 500);
+    } else if (responses[userInput]) {
+      setTimeout(() => addMessage(responses[userInput], "bot-message"), 500);
+    } else {
+      setTimeout(() => addMessage("I'm here to help! Please clarify your question.", "bot-message"), 500);
+    }
+  }
+
+  function addMessage(text, className) {
+    const message = document.createElement("div");
+    message.className = `message ${className}`;
+    message.textContent = text;
+    document.getElementById("chatBody").appendChild(message);
+    document.getElementById("chatBody").scrollTop = document.getElementById("chatBody").scrollHeight;
+  }
+
+  function sendFAQ(question) {
+    document.getElementById("userInput").value = question;
+    sendMessage();
+  }
+
+  function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+      sendMessage();
+    }
+  }
+</script>
+
+</body>
+</html>
+
+-->
+
+<!-- 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Slide with Multiple Rotations</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .animated-image {
+      width: 300px;
+      height: auto;
+      transform: translateX(-100%) rotateX(45deg) rotateY(90deg) rotateZ(30deg); /* Start off-screen with multiple rotations */
+      animation: slideInRotate3D 2.5s ease forwards;
+    }
+
+    @keyframes slideInRotate3D {
+      0% {
+        transform: translateX(-100%) rotateX(45deg) rotateY(90deg) rotateZ(30deg);
+        opacity: 0;
+      }
+      50% {
+        transform: translateX(-50%) rotateX(20deg) rotateY(45deg) rotateZ(-15deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg); /* End position, fully on screen with no rotation */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<img src="./Asset/moter.png" alt="3D Rotating Image" class="animated-image">
+
+</body>
+</html> -->
+
+
+<!-- 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Finger Gesture Controlled Image Slider with Zoom</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .slider {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; 
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .slide {
+            min-width: 100%;
+        }
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider" id="slider">
+        <div class="slides">
+            <div class="slide"><img src="./Asset/10.png" alt="Slide 1"></div>
+            <div class="slide"><img src="./Asset/grade1.jpg" alt="Slide 2"></div>
+            <div class="slide"><img src="./Asset/grade6.jpg" alt="Slide 3"></div>
+            <div class="slide"><img src="./Asset/grade6.jpg" alt="Slide 4"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script>
+        const slider = document.querySelector('.slides');
+        const slides = document.querySelectorAll('.slide');
+        const sliderContainer = document.getElementById('slider');
+        let currentIndex = 0;
+        let prevX = null;
+        let handDetected = false;
+
+        const hands = new Hands({
+            locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`
+        });
+        hands.setOptions({
+            maxNumHands: 1,
+            modelComplexity: 1,
+            minDetectionConfidence: 0.7,
+            minTrackingConfidence: 0.7
+        });
+
+        hands.onResults(onResults);
+
+        const videoElement = document.createElement("video");
+        const camera = new Camera(videoElement, {
+            onFrame: async () => {
+                await hands.send({ image: videoElement });
+            },
+            width: 640,
+            height: 480
+        });
+        camera.start();
+
+        function onResults(results) {
+            if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
+                handDetected = true;
+                const landmarks = results.multiHandLandmarks[0];
+
+                const thumbTip = landmarks[4].y < landmarks[3].y;
+                const indexTip = landmarks[8].y < landmarks[6].y;
+                const middleTip = landmarks[12].y < landmarks[10].y;
+                const ringTip = landmarks[16].y < landmarks[14].y;
+                const pinkyTip = landmarks[20].y < landmarks[18].y;
+
+                const fiveFingersUp = thumbTip && indexTip && middleTip && ringTip && pinkyTip;
+
+                if (fiveFingersUp) {
+                    sliderContainer.style.transform = 'scale(1.05)';
+                } else {
+                    sliderContainer.style.transform = 'scale(1)'; 
+                }
+
+                const indexFingerTip = landmarks[8];
+                const middleFingerTip = landmarks[12];
+                const avgX = (indexFingerTip.x + middleFingerTip.x) / 2;
+
+                if (prevX !== null) {
+                    if (avgX < prevX - 0.05) {
+                        slideLeft();
+                    } else if (avgX > prevX + 0.05) {
+                        slideRight();
+                    }
+                }
+                prevX = avgX;
+            } else if (handDetected) {
+                handDetected = false;
+                sliderContainer.style.transform = 'scale(1)'; 
+            }
+        }
+
+        function slideLeft() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateSlider();
+        }
+
+        function slideRight() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlider();
+        }
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!-- 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Instagram with Gesture Control</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fafafa;
+            margin: 0;
+            overflow: hidden;
+        }
+        .camera, .gallery {
+            margin-top: 10px;
+            max-width: 600px;
+            width: 100%;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+            max-height: 400px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        .photo {
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .photo img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .like {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(255, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            display: none;
+        }
+        .liked .like {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="camera">
+        <button onclick="capturePhoto()">Capture Photo</button>
+        <video id="video" width="100%" autoplay playsinline></video>
+    </div>
+
+    <div class="gallery" id="gallery"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    
+    <script>
+        const videoElement = document.getElementById('video');
+        const gallery = document.getElementById('gallery');
+        let prevY = null;
+
+        const hands = new Hands({
+            locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`
+        });
+        hands.setOptions({
+            maxNumHands: 1,
+            modelComplexity: 1,
+            minDetectionConfidence: 0.7,
+            minTrackingConfidence: 0.7
+        });
+        hands.onResults(onResults);
+
+        const camera = new Camera(videoElement, {
+            onFrame: async () => {
+                await hands.send({ image: videoElement });
+            },
+            width: 640,
+            height: 480
+        });
+        camera.start();
+
+        function capturePhoto() {
+            const canvas = document.createElement('canvas');
+            canvas.width = videoElement.videoWidth;
+            canvas.height = videoElement.videoHeight;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
+            
+            const photoDiv = document.createElement('div');
+            photoDiv.classList.add('photo');
+            photoDiv.innerHTML = `
+                <img src="${canvas.toDataURL('image/png')}" alt="Captured Photo">
+                <span class="like">❤️ Liked</span>
+            `;
+            gallery.prepend(photoDiv);
+        }
+
+        function onResults(results) {
+            if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
+                const landmarks = results.multiHandLandmarks[0];
+                const indexFingerTip = landmarks[8];
+                const thumbTip = landmarks[4];
+                const middleFingerTip = landmarks[12];
+                const ringFingerTip = landmarks[16];
+                const pinkyTip = landmarks[20];
+                
+                if (prevY !== null) {
+                    if (indexFingerTip.y < prevY - 0.05) {
+                        scrollUp(); 
+                    } else if (indexFingerTip.y > prevY + 0.05) {
+                        scrollDown(); 
+                    }
+                }
+                prevY = indexFingerTip.y;
+
+                const allFingersUp = thumbTip.y < landmarks[3].y &&
+                                     indexFingerTip.y < landmarks[6].y &&
+                                     middleFingerTip.y < landmarks[10].y &&
+                                     ringFingerTip.y < landmarks[14].y &&
+                                     pinkyTip.y < landmarks[18].y;
+                
+                if (allFingersUp) {
+                    likePhoto();
+                }
+            } else {
+                prevY = null; 
+            }
+        }
+
+        function scrollUp() {
+            gallery.scrollBy(0, -30); 
+        }
+
+        function scrollDown() {
+            gallery.scrollBy(0, 30); 
+        }
+
+        function likePhoto() {
+            const latestPhoto = gallery.querySelector('.photo');
+            if (latestPhoto && !latestPhoto.classList.contains('liked')) {
+                latestPhoto.classList.add('liked');
+            }
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Efficiency Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .fuel-icon {
+            width: 50px;
+            height: 50px;
+            background-image: url('https://img.icons8.com/ios-filled/50/000000/gas-station.png');
+            background-size: cover;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+            animation-delay: 0.5s;
+        }
+
+        .arrow {
+            display: flex;
+            align-items: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            position: relative;
+            animation: slideIn 1s forwards;
+            animation-delay: 1.5s;
+        }
+        .arrow::after {
+            content: "";
+            position: absolute;
+            right: -20px;
+            top: 0;
+            border-left: 20px solid #4CAF50;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+        .arrow span {
+            opacity: 0;
+            animation: textPop 1s ease forwards;
+            animation-delay: 2s;
+            margin-right: 10px;
+        }
+
+        .car-icon {
+            width: 50px;
+            height: 50px;
+            background-image: url('https://img.icons8.com/ios-filled/50/4CAF50/suv.png');
+            background-size: cover;
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: driveCar 2s ease forwards;
+            animation-delay: 2.5s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes textPop {
+            0% { opacity: 0; transform: scale(0.5); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes driveCar {
+            0% { opacity: 0; transform: translateX(-50px); }
+            100% { opacity: 1; transform: translateX(20px); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="fuel-icon"></div>
+
+    <div class="arrow">
+        <span>Verified at least a 30% improvement in actual driving fuel efficiency</span>
+        <span>+30%</span>
+    </div>
+
+    <div class="car-icon"></div>
+</div>
+
+</body>
+</html> -->
+
+
+
+
+<!-- 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Efficiency Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .fuel-icon {
+            width: 50px;
+            height: 50px;
+            background-image: url('https://img.icons8.com/ios-filled/50/000000/gas-station.png');
+            background-size: cover;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+            animation-delay: 0.5s;
+        }
+
+        .arrow {
+            display: flex;
+            align-items: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            position: relative;
+            animation: slideIn 1s forwards;
+        }
+        .arrow::after {
+            content: "";
+            position: absolute;
+            right: -20px;
+            top: 0;
+            border-left: 20px solid #4CAF50;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+
+        .fuel-arrow {
+            animation-delay: 1.5s;
+        }
+        .percentage-arrow {
+            animation-delay: 2.5s;
+        }
+
+        .arrow span {
+            opacity: 0;
+            animation: textPop 1s ease forwards;
+            margin-right: 10px;
+        }
+
+        .fuel-arrow span {
+            animation-delay: 2s;
+        }
+
+        .percentage-arrow span {
+            animation-delay: 3s;
+        }
+
+        .car-icon {
+            width: 50px;
+            height: 50px;
+            background-image: url('https://img.icons8.com/ios-filled/50/4CAF50/suv.png');
+            background-size: cover;
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: driveCar 2s ease forwards;
+            animation-delay: 3.5s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes textPop {
+            0% { opacity: 0; transform: scale(0.5); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes driveCar {
+            0% { opacity: 0; transform: translateX(-50px); }
+            100% { opacity: 1; transform: translateX(20px); }
+        }
+
+        .pointer {
+    display: inline-block;
+    font-size: 16px;
+    padding-left: calc(0.25em * 5);
+    padding-right: calc(0.25em * 5);
+    padding-top: calc(0.25em * 2);
+    padding-bottom: calc(0.25em * 2);
+    height: calc(0.25em * 16);
+    position: relative;
+    background: #777777;
+    max-width: calc(0.25em * 32);
+    min-width: calc(0.25em * 12);
+    clip-path: polygon(
+        calc(0.25em * 42 * 0.85) 0,
+        calc(0.25em * 42) 50%,
+        calc(0.25em * 42 * 0.85) 100%,
+        0% 100%,
+        calc(0.25em * 32 * 0.15) 50%,
+        0% 0%
+    );
+}
+
+.pointer .text-content {
+    display: inline-block;
+    position: relative;
+    top: calc(0.25em * -0.5);
+    left: calc(0.25em * 2.5);
+    min-width: calc(0.25em * 28);
+    min-height: calc(0.25em * 17);
+    margin-right: calc(0.25em * 4);
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+.pointer .text-content p {
+    text-align: center;
+}
+
+
+
+
+
+
+.typing-title {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: green;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.typing {
+    display: inline-block;
+    padding: 20px;
+    font-size: 1rem;
+    color: rgba(60, 0, 255, 0.897);
+    animation: typing 3s steps(20, end),
+        colorChange 3s ease-in-out infinite;
+}
+
+
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+@keyframes blink {
+    0%,
+    100% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+
+@media (max-width: 700px) {
+    .geeks-title {
+        font-size: 20px;
+    }
+
+    .typing-title {
+        font-size: 16px;
+    }
+
+    .typing {
+        font-size: 50px;
+    }
+
+    .cursor {
+        height: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .geeks-title {
+        font-size: 15px;
+    }
+
+    .typing-title {
+        font-size: 13px;
+    }
+
+    .typing {
+        font-size: 40px;
+    }
+
+    .cursor {
+        height: 40px;
+    }
+}
+    </style>
+</head>
+<body>
+  <div class="pointer">
+    <div class="text-content">
+      <p>Lorem ipsum dolor sit amet</p>
+    </div>
+  </div>
+<div class="container">
+    <div class="fuel-icon"></div>
+
+    <div class="arrow fuel-arrow">
+        <span>fuel</span>
+    </div>
+
+    <div class="arrow percentage-arrow">
+        <span>+30%</span>
+    </div>
+
+    <div class="car-icon"></div>
+</div>
+<div class="container">
+ 
+
+  <div class="typing">
+      <span id="text"></span>
+      <div class="cursor"></div>
+  </div>
+</div>
+
+</body>
+<script>let textdata = [
+   "Learn JavaScript", 
+  "Learn ReactJS", "Learn JAVA"
+];
+
+let ref = document.getElementById("text");
+let cur = document.querySelector(".cursor");
+let ind = 0;
+let cInd = 0;
+let remove = false;
+
+function textTypeFunction() {
+  if (ind < textdata.length) {
+      let currentText = textdata[ind];
+      if (!remove && cInd < currentText.length) {
+          ref.textContent += currentText.charAt(cInd);
+          cInd++;
+          setTimeout(textTypeFunction, 100);
+      } else if (remove && cInd >= 0) {
+          ref.textContent = currentText.substring(0, cInd);
+          cInd--;
+          setTimeout(textTypeFunction, 100);
+      } else {
+          remove = !remove;
+          if (!remove) {
+              ind++;
+              if (ind >= textdata.length) {
+                  ind = 0;
+              }
+          }
+          setTimeout(textTypeFunction, 1000);
+      }
+  }
+}
+
+textTypeFunction();
+</script>
+</html> -->
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Efficiency Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .fuel-icon {
+            width: 50px;
+            height: 50px;
+            background-image: url('https://img.icons8.com/ios-filled/50/000000/gas-station.png');
+            background-size: cover;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+            animation-delay: 0.5s;
+            z-index: 5;
+        }
+
+
+.pointer .text-content p {
+    text-align: center;
+}
+
+.fuel-pointer {
+    animation-delay: 1.5s;
+}
+.percentage-pointer {
+    animation-delay: 2.5s;
+}
+
+.pointer span {
+    opacity: 0;
+    animation: textPop 1s ease forwards;
+    margin-right: 10px;
+}
+.fuel-pointer span {
+    animation-delay: 2s;
+}
+.percentage-pointer span {
+    animation-delay: 3s;
+}
+
+.pointer {
+    width: 300px;
+    height: 300px;
+    background-color: #000000;
+    clip-path: polygon(9.13% 25%, 63.25% 25%, 79.75% 48.75%, 79.75% 48.75%, 63.25% 72.5%, 9.13% 72.5%, 21% 48.75%);
+    margin: 0 0 !important;
+    display: flex !important;
+    z-index: 1 !important;
+  }
+  
+  @media (max-width: 768px) {
+    .pointer {
+      width: 100px !important;
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pointer {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+        .car-icon {
+            width: 50px;
+            height: 50px;
+            background-image: url('https://img.icons8.com/ios-filled/50/4CAF50/suv.png');
+            background-size: cover;
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: driveCar 2s ease forwards;
+            animation-delay: 3.5s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes textPop {
+            0% { opacity: 0; transform: scale(0.5); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes driveCar {
+            0% { opacity: 0; transform: translateX(-50px); }
+            100% { opacity: 1; transform: translateX(20px); }
+        }
+
+        
+
+    </style>
+</head>
+<body>
+ 
+<div class="container">
+    <div class="fuel-icon"></div>
+
+    <div class="pointer fuel-pointer">
+        <span>fuel</span>
+    </div>
+
+    <div class="pointer percentage-pointer">
+        <span>+30%</span>
+    </div>
+
+    <div class="car-icon"></div>
+</div>
+
+
+</body>
+
+</html>  -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Efficiency Animation</title>
+    <style>
+   
+        .container {
+            display: flex;
+            gap: 0 !important;
+            background-color: rgb(214, 31, 31);
+        }
+
+        .fuel-icon {
+            width: 50px;
+            height: 50px;
+            background-image: url('https://img.icons8.com/ios-filled/50/000000/gas-station.png');
+            background-size: cover;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+            animation-delay: 0.5s;
+            z-index: 5;
+        }
+
+        .pointer {
+            width: 150px !important; 
+            height: 100px;
+            background-color: #4CAF50;
+            clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+            display: flex;
+            margin: 0 !important;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            opacity: 0;
+            gap: 0 !important;
+
+            animation: fadeIn 2s ease forwards;
+        }
+
+        .fuel-pointer {
+            animation-delay: 1.5s;
+        }
+
+        .percentage-pointer {
+            animation-delay: 2.5s;
+        }
+
+        .pointer span {
+            opacity: 0;
+            animation: textPop 1s ease forwards;
+        }
+
+        .fuel-pointer span {
+            animation-delay: 2s;
+        }
+
+        .percentage-pointer span {
+            animation-delay: 3s;
+        }
+
+        .car-icon {
+            width: 80px;
+            height: 80px;
+            background-image: url('https://img.icons8.com/ios-filled/50/4CAF50/suv.png');
+            background-size: cover;
+            opacity: 0;
+            transform: translateX(-30px);
+            animation: driveCar 2s ease forwards;
+            animation-delay: 2s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes textPop {
+            0% { opacity: 0; transform: scale(0.5); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes driveCar {
+            0% { opacity: 0; transform: translateX(-30px); }
+            100% { opacity: 1; transform: translateX(10px); }
+        }
+    </style>
+</head>
+<body>
+    <span class="container">
+        <span class="fuel-icon"></span>
+        <p class="pointer fuel-pointer">
+            Fuel
+        </p>
+        <p class="pointer percentage-pointer">
+            +30%
+        </p>
+        <span class="car-icon"></span>
+    </span>
+</body>
+</html>  -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Efficiency Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            gap: 0;
+            padding: 10px;
+            border-radius: 10px;
+            animation: slideIn 1s ease-out forwards;
+            background-image: url(./Asset/fuel\ \(1\).jpg);
+            background-size: cover;
+
+  background-position: bottom;
+  animation: moveBackground 4s linear infinite;
+        }
+
+        .fuel-icon {
+            width: 50px;
+            height: 50px;
+            background-image: url('https://img.icons8.com/ios-filled/50/000000/gas-station.png');
+            background-size: cover;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+            animation-delay: 0.5s;
+            z-index: 5;
+        }
+
+        .pointer {
+            width: 150px;
+            height: 50px;
+            background-color: #070707;
+            clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            opacity: 0;
+            margin: 0 5px;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        .fuel-pointer {
+            animation-delay: 1.5s;
+        }
+
+        .percentage-pointer {
+            animation-delay: 2.5s;
+        }
+
+        .pointer span {
+            opacity: 0;
+            animation: textPop 1s ease forwards;
+        }
+
+        .fuel-pointer span {
+            animation-delay: 2s;
+        }
+
+        .percentage-pointer span {
+            animation-delay: 3s;
+        }
+
+        .car-icon {
+            width: 100px;
+            height: 70px;
+            background-image: url('https://img.icons8.com/ios-filled/50/4CAF50/suv.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 1;
+            margin-bottom: 10px !important;
+            margin-left: 10px;
+            animation: driveCar 2s ease forwards;
+            animation-delay: 2s;
+        }
+.pointer1{
+  width: 150px;
+  height: 50px;
+  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+
+  
+
+}
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes textPop {
+            0% { opacity: 0; transform: scale(0.5); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes moveBackground {
+            0% { background-position: 0 0; }
+            100% { background-position: -200px 0; }
+        }
+        @keyframes driveCar {
+            0% { opacity: 0; transform: translateX(-30px); }
+            100% { opacity: 1; transform: translateX(10px); }
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                padding: 5px;
+            }
+
+            .pointer {
+                width: 100px;
+                height: 40px;
+                font-size: 14px;
+                margin: 5px 0;
+            }
+
+            .fuel-icon, .car-icon {
+                width: 60px;
+                height: 60px;
+              
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="fuel-icon"></div>
+
+        <div class="pointer fuel-pointer">
+            <span>Fuel</span>
+        </div>
+
+        <div class="pointer percentage-pointer">
+            <span>+30%</span>
+        </div>
+        <div class="pointer1">
+          <div class="car-icon"></div>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+ 
+
+<!-- 
+clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+clip-path: polygon(9.13% 25%, 63.25% 25%, 79.75% 48.75%, 79.75% 48.75%, 63.25% 72.5%, 9.13% 72.5%, 21% 48.75%); -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Effect with Erasing and Loop</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .static-text {
+            font-size: 24px;
+            color: #333;
+            position: fixed;
+        }
+
+        .typing-container {
+            display: inline;
+            font-size: 24px;
+            color: #333;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid #333;
+            animation: blink-caret 0.7s step-end infinite;
+        }
+
+        /* Blinking caret effect */
+        @keyframes blink-caret {
+            50% {
+                border-color: transparent;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .static-text, .typing-container {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="static-text">Hello,</div>
+<div class="typing-container" id="typingText"></div>
+
+<script>
+    const sentences = [
+        " welcome to the typing effect example!",
+        " this is the second sentence with the typing effect.",
+        " and here is the third sentence, smoothly typed out."
+    ];
+
+    const typingSpeed = 100;
+    const erasingSpeed = 50;
+    const sentencePause = 1000;
+
+    let sentenceIndex = 0;
+    let charIndex = 0;
+    let isErasing = false;
+
+    function typeText() {
+        const typingContainer = document.getElementById('typingText');
+        
+        if (!isErasing && charIndex < sentences[sentenceIndex].length) {
+            typingContainer.innerHTML += sentences[sentenceIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(typeText, typingSpeed);
+        } else if (isErasing && charIndex > 0) {
+            typingContainer.innerHTML = sentences[sentenceIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(typeText, erasingSpeed);
+        } else if (!isErasing && charIndex === sentences[sentenceIndex].length) {
+            isErasing = true;
+            setTimeout(typeText, sentencePause);
+        } else if (isErasing && charIndex === 0) {
+            isErasing = false;
+            sentenceIndex = (sentenceIndex + 1) % sentences.length;
+            setTimeout(typeText, typingSpeed);
+        }
+    }
+
+    window.addEventListener('load', typeText);
+</script>
+
+</body>
+</html> -->
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Efficiency Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            gap: 0;
+            padding: 10px;
+            border-radius: 10px;
+        
+        }
+
+        .fuel-icon {
+            width: 50px;
+            height: 50px;
+            background-image: url('https://img.icons8.com/ios-filled/50/000000/gas-station.png');
+            background-size: cover;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+            animation-delay: 0.5s;
+            z-index: 5;
+        }
+
+        .pointer {
+            width: 150px;
+            height: 50px;
+background-color: black;            background-size: cover;
+            background-position: center;
+            clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            opacity: 0;
+            margin: 0 5px;
+            animation: slideIn 1s ease forwards;
+        }
+        .pointer1 {
+            width: 150px;
+            height: 50px;
+background-color: black;            background-size: cover;
+            background-position: center;
+            clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            opacity: 0;
+            margin: 0 5px;
+            animation: slideIn 1s ease forwards;
+        }
+        .fuel-pointer {
+            animation-delay: 1.5s;
+        }
+
+        .percentage-pointer {
+            animation-delay: 2.5s;
+        }
+
+        .pointer span {
+            opacity: 0;
+            animation: textPop 1s ease forwards;
+        }
+
+        .fuel-pointer span {
+            animation-delay: 2s;
+        }
+
+        .percentage-pointer span {
+            animation-delay: 3s;
+        }
+
+        .car-icon {
+            width: 100px;
+            height: 70px;
+            background-image: url('https://img.icons8.com/ios-filled/50/4CAF50/suv.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0;
+            margin-bottom: 10px !important;
+            margin-left: 10px;
+            animation: driveCar 1s ease forwards;
+            animation-delay: 4s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes textPop {
+            0% { opacity: 0; transform: scale(0.5); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes moveBackground {
+            0% { background-position: 0 0; }
+            100% { background-position: -200px 0; }
+        }
+
+        @keyframes driveCar {
+            0% { transform: translateX(-50px); opacity: 0; }
+            100% { transform: translateX(10px); opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                padding: 5px;
+            }
+
+            .pointer {
+                width: 100px;
+                height: 40px;
+                font-size: 14px;
+                margin: 5px 0;
+            }
+
+            .fuel-icon, .car-icon {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="fuel-icon"></div>
+
+        <div class="pointer fuel-pointer">
+            <span>Fuel</span>
+        </div>
+
+        <div class="pointer percentage-pointer">
+            <span>+30%</span>
+        </div>
+      
+        <div class="car-icon"></div>
+    </div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark and Light Mode Toggle</title>
+</head>
+<style>
+
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      transition: background-color 0.3s;
+    }
+    
+    .theme-toggle .switch {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 20px;
+    }
+    
+    .theme-toggle .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .theme-toggle .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: 0.4s;
+      border-radius: 34px;
+    }
+    
+    .theme-toggle .slider:before {
+      position: absolute;
+      content: "";
+      height: 14px;
+      width: 14px;
+      left: 4px;
+      bottom: 3px;
+      background-color: white;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+    
+    .theme-toggle input:checked + .slider {
+      background-color: #2196F3;
+    }
+    
+    .theme-toggle input:checked + .slider:before {
+      transform: translateX(18px);
+    }
+    
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+    
+    body.dark-mode .navbar {
+      background-color: #444;
+      border-bottom: 1px solid #222;
+    }
+    </style>
+<body>
+  <nav class="navbar">
+    <h1>My Website</h1>
+    <div class="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </nav>
+
+  <div class="content">
+    <p>Welcome to my website. Toggle the switch to change between dark and light modes.</p>
+  </div>
+
+  <script >
+    const themeToggle = document.getElementById("theme-toggle");
+    
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark-mode");
+      themeToggle.checked = true;
+    }
+    
+    themeToggle.addEventListener("change", () => {
+      if (themeToggle.checked) {
+        document.body.classList.add("dark-mode");
+        localStorage.setItem("theme", "dark");
+      } else {
+        document.body.classList.remove("dark-mode");
+        localStorage.setItem("theme", "light");
+      }
+    });
+    </script>
+</body>
+</html>  -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark and Light Mode Toggle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      transition: background-color 0.3s;
+    }
+
+    .theme-toggle .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 30px;
+    }
+
+    .theme-toggle .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .theme-toggle .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      border-radius: 30px;
+      transition: background-color 0.4s;
+    }
+
+    .theme-toggle .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 2px;
+      bottom: 2px;
+      background-color: #f0f0f0;
+      background-image: url('https://img.icons8.com/ios-filled/50/000000/sun--v1.png'); /* Sun icon */
+      background-size: cover;
+      border-radius: 50%;
+      transition: transform 0.4s, background-image 0.4s;
+    }
+
+    /* Change background and icon for dark mode */
+    .theme-toggle input:checked + .slider {
+      background-color: #333;
+    }
+
+    .theme-toggle input:checked + .slider:before {
+      transform: translateX(30px);
+      background-image: url('https://img.icons8.com/ios-filled/50/000000/half-moon.png'); /* Half-moon icon */
+    }
+
+    /* Dark mode body styles */
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+
+    body.dark-mode .navbar {
+      background-color: #444;
+      border-bottom: 1px solid #222;
+    }
+
+    .content {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1>My Website</h1>
+    <div class="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </nav>
+
+  <div class="content">
+    <p>Welcome to my website. Toggle the switch to change between dark and light modes.</p>
+  </div>
+
+  <script>
+    const themeToggle = document.getElementById("theme-toggle");
+
+    // Check for saved theme in local storage
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark-mode");
+      themeToggle.checked = true;
+    }
+
+    themeToggle.addEventListener("change", () => {
+      if (themeToggle.checked) {
+        document.body.classList.add("dark-mode");
+        localStorage.setItem("theme", "dark");
+      } else {
+        document.body.classList.remove("dark-mode");
+        localStorage.setItem("theme", "light");
+      }
+    });
+  </script>
+</body>
+</html>
+ -->
+
+
+
+
+
+
+<!-- 
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark and Light Mode Toggle</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      transition: background-color 0.3s;
+    }
+
+    .theme-toggle .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 30px;
+    }
+
+    .theme-toggle .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .theme-toggle .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      border-radius: 30px;
+      transition: background-color 0.4s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: #f39c12; 
+    }
+
+    .theme-toggle input:checked + .slider {
+      background-color: #333;
+      color: #f1c40f; 
+    }
+
+    .slider::before {
+      content: "\f185";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      position: absolute;
+    }
+    .theme-toggle input:checked + .slider::before {
+      content: "\f186"; 
+    }
+
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+
+    body.dark-mode .navbar {
+      background-color: #444;
+      border-bottom: 1px solid #222;
+    }
+
+    .content {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1>My Website</h1>
+    <div class="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </nav>
+
+  <div class="content">
+    <p>Welcome to my website. Toggle the switch to change between dark and light modes.</p>
+  </div>
+
+  <script>
+    const themeToggle = document.getElementById("theme-toggle");
+
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark-mode");
+      themeToggle.checked = true;
+    }
+
+    themeToggle.addEventListener("change", () => {
+      if (themeToggle.checked) {
+        document.body.classList.add("dark-mode");
+        localStorage.setItem("theme", "dark");
+      } else {
+        document.body.classList.remove("dark-mode");
+        localStorage.setItem("theme", "light");
+      }
+    });
+  </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll 3D Animation with Carved Sections</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            height: 300vh; /* Increased height to enable scrolling through more content */
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: #fff;
+            position: relative;
+        }
+
+        /* Carved effect for home, about, and contact sections using clip-path */
+        #home {
+            background: #ff7eb3;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%); /* Create a carved shape */
+        }
+
+        #about {
+            background: #7ecbff;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%); /* Another carving */
+        }
+
+        #contact {
+            background: #9fff80;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0% 70%); /* Another carving */
+        }
+
+        .image-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            perspective: 1200px;
+            z-index: 100;
+            transition: transform 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+
+        .scroll-image {
+            width: 150px;
+            height: 150px;
+            background: url('./Asset/moter.png') no-repeat center center / cover;
+            border-radius: 50%;
+            transform-style: preserve-3d;
+            transition: transform 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+
+        .move-to-about {
+            transform: rotateX(30deg) rotateY(45deg) translateY(-50vh);
+        }
+
+        .move-to-contact {
+            transform: rotateX(-30deg) rotateY(-45deg) translateY(50vh);
+        }
+
+        .home-content, .about-content, .contact-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="home">
+        <div class="home-content">
+            Home Section
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            About Section
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-form">
+            Contact Section
+        </div>
+    </section>
+
+    <!-- Fixed Animated Image -->
+    <div class="image-container">
+        <div id="animatedImage" class="scroll-image"></div>
+    </div>
+
+    <script>
+        const animatedImage = document.getElementById('animatedImage');
+        const homeSection = document.getElementById('home');
+        const aboutSection = document.getElementById('about');
+        const contactSection = document.getElementById('contact');
+
+        window.addEventListener('scroll', function () {
+            const scrollPosition = window.scrollY;
+            const homeHeight = homeSection.offsetHeight;
+            const aboutHeight = aboutSection.offsetHeight;
+            const contactHeight = contactSection.offsetHeight;
+
+            if (scrollPosition < homeHeight) {
+                animatedImage.classList.remove('move-to-about', 'move-to-contact');
+                animatedImage.style.transform = 'translate(-50%, -50%)';
+            } else if (scrollPosition >= homeHeight && scrollPosition < homeHeight + aboutHeight) {
+                animatedImage.classList.add('move-to-about');
+                animatedImage.classList.remove('move-to-contact');
+            } else if (scrollPosition >= homeHeight + aboutHeight && scrollPosition < homeHeight + aboutHeight + contactHeight) {
+                animatedImage.classList.add('move-to-contact');
+            } else {
+                animatedImage.classList.remove('move-to-about', 'move-to-contact');
+            }
+        });
+    </script>
+
+</body>
+</html>

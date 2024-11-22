@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 
+    Eco-Hez lanka(pvt)Ltd </title>
+    <link rel="icon" href="./Asset/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./Styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Junk+Robo&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+
+    @font-face {
+      font-family: "Junk Robo";
+      src: url("./font/JunkRobo-z8vzX.otf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "HappyLucky";
+      src: url("./font/HappyLucky-gxnZP.ttf") format("truetype");
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <a class="navbar-brand" href="#home">
+      <img src="./Asset//logo.png" alt="Logo">
+    </a>
+    <button class="navbar-toggler" id="navbarToggler" aria-label="Toggle navigation">
+      <span class="toggler-icon"></span>
+      <span class="toggler-icon1"></span>
+      <span class="toggler-icon2"></span>
+    </button>
+    <div class=" navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <div class="theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider">
+          </span>
+        </label>
+      </div>
+    </div>
+
+  </nav>
+
+  <section id="home">
+    <div id="particles-js" class="jss"></div>
+    <div class="content homeContent" style="z-index: 800;">
+      <p class="home-paragraph">HYO M5 Can Reduce
+
+        <br>
+        <span class="typing-container home-paragraph" id="typingText"></span>
+      </p>
+      <p class="home-detail"> In The Exprrient,It Resulted In An Average of <span
+          style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder; color: #0df705;">30%
+        </span>Improvement In Fuel Efficiency When
+        Installing HYO In Actual Vechiles.</p>
+
+      <div class="container-fuel">
+        <div class="fuel-icon"></div>
+
+        <div class="pointer fuel-pointer">
+          <span>Verified at least a 30% improvement in actual driving fuel efficiency</span>
+        </div>
+
+        <div class="pointer percentage-pointer">
+          <span>+30%</span>
+        </div>
+
+        <span class="car-icon"></span>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img src="./Asset/moter.png" alt="Background Image" class="background">
+
+      <img id="animatedImage" class="overlay" src="./Asset/moter.png" alt="Home Image">
+    </div>
+  </section>
+
+  <section id="about" class="About">
+    <div class="content">
+      <p class="about-paragraph">About Us</p>
+      <p class="about-detail">Ecosteem (Pvt) Ltd., was founded in Jaffna, Sri Lanka on April 2011. It was establish to
+        provide professional service for renewable energy sectors and help People of Sri Lanka to
+        save environment while saving cost of energy.
+        Ecosteem specialized in designing, installing and maintaining renewable energy solutions to
+        suit our customer’s requirements. In 2023 Ecosteem Entered Partnership With Hez co,Ltd And Found Eco-Hez
+        lanka(pvt)Ltd Started Assembling & Distributing HYO Unit In Srilanka
+      </p>
+      <table>
+        <tr>
+          <th>Description</th>
+          <th>Before</th>
+          <th>After</th>
+        </tr>
+        <tr>
+          <td class="description">STD(1/m)</td>
+          <td class="percentage" data-target="4">0%</td>
+          <td class="percentage" data-target="4">0%</td>
+        </tr>
+        <tr>
+          <td class="description">RPM (r/min)</td>
+          <td class="percentage" data-target="3423">0%</td>
+          <td class="percentage" data-target="3146">0%</td>
+        </tr>
+        <tr>
+          <td class="description">OPACITY%</td>
+          <td class="percentage" data-target="7.13">0%</td>
+          <td class="percentage" data-target="2.13">0%</td>
+        </tr>
+        <tr>
+          <td class="description">K (1/m)</td>
+          <td class="percentage" data-target="0.31">0%</td>
+          <td class="percentage" data-target="0.09">0%</td>
+        </tr>
+        <tr>
+          <td class="description">t <sub>B <sup>(s)</sup></sub></td>
+          <td class="percentage" data-target="5">0%</td>
+          <td class="percentage" data-target="2.67">0%</td>
+        </tr>
+        <tr>
+          <td class="description">OIL TEM (<sup>o</sup> c)</td>
+          <td class="percentage" data-target="62">0%</td>
+          <td class="percentage" data-target="60">0%</td>
+        </tr>
+      </table>
+      <button class="show-image-button" onclick="showImage()">Show Image</button>
+      <div class="overlaytable" id="overlaytable" onclick="closeImage()"></div>
+      <div class="image-container-table" id="imageContainer-table">
+        <button class="close-button" onclick="closeImage()">Close</button>
+        <img src="./Asset/proof.png" alt="Sample Image">
+      </div>
+    </div>
+    <div class="image-container">
+    </div>
+  </section>
+
+
+
+  <section class="contact-section" id="contact">
+    <div style="z-index: 900; margin-top: 100px;">
+      <div id="contacts" style="margin-top: 20px;">
+        <p class="image-text">CONTACT US</p>
+
+        <form class="contact-form" id="contact-form" action="#" method="POST">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <input type="tel" id="phone" name="number" placeholder="+123 456 7890" required>
+          <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+
+      </div>
+      <div class="whatsup">
+        <a class="whatsapp-link" href="https://wa.me/+94753546810" target="_blank">
+          <img class="whatsapp-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+            alt="WhatsApp Logo">
+          <span class="whatsapp-text">Chat with us</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    Copyright © ECOSTEEM (Pvt) Ltd 2024. All rights reserved.
+  </div>
+
+
+
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./particlesjs/particles.js-master/dist/particles.min.js"></script>
+  <script src="./particlesjs/particles.js-master/dist/particles.js"></script>
+  <script src="./particlesjs/particles.js-master/src/particles.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./scripts.js"></script>
+</body>
+
+</html>

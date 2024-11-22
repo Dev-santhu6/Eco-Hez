@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Table with Percentage Animation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            perspective: 1000px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        .section {
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(120deg, #ff7eb3, #ff758c);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #fff;
+        }
+
+        .image-container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .scroll-image {
+            width: 300px;
+            transform-origin: center;
+            transition: transform 0.3s ease;
+        }
+
+        /* Move to About animation */
+        .move-to-about {
+            transform: translateX(-100vh) translateY(100vh) rotate(15deg); 
+            transition: transform 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="section" id="section1">Section 1</div>
+        <div class="image-container">
+            <img src="./Asset//moter.png" alt="3D Image" class="scroll-image" id="animatedImage">
+        </div>
+        <div class="section" id="section2">Section 2</div>
+        <div class="section" id="section3">Section 3</div>
+    </div>
+
+    <script>
+        // Scroll-based 3D effect
+        document.addEventListener("scroll", () => {
+            const scrollTop = window.scrollY;
+            const viewportHeight = window.innerHeight;
+
+            const image = document.querySelector('.scroll-image');
+            const rotation = scrollTop / viewportHeight * 360; // Rotate based on scroll
+            const translateZ = (scrollTop / viewportHeight) * -200; // Move closer on scroll
+
+            image.style.transform = `rotateY(${rotation}deg) translateZ(${translateZ}px)`;
+        });
+
+        // Add move-to-about class based on scroll position
+        const aboutSection = document.getElementById("section2").offsetTop;
+        const contactSection = document.getElementById("section3").offsetTop;
+        const animatedImage = document.getElementById("animatedImage");
+
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            
+            if (scrollPosition > aboutSection - window.innerHeight / 2 && scrollPosition < contactSection - window.innerHeight / 2) {
+                animatedImage.classList.remove('move-to-about');
+                animatedImage.classList.add('move-to-about');
+                updateActiveLink('about');
+            }
+        });
+
+        // Dummy function for updating active link (You can modify this to update actual navigation links)
+        function updateActiveLink(section) {
+            console.log('Active section:', section);  // Just logs which section is active, replace with actual navigation logic
+        }
+    </script>
+
+</body>
+</html>
