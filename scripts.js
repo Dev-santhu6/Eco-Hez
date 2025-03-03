@@ -185,7 +185,7 @@ function animatePercentages() {
   percentages.forEach(percentage => {
     const target = +percentage.getAttribute('data-target');
     let count = 0;
-    const increment = target / 500;
+    const increment = target / 300;
 
     const updateCount = () => {
       count += increment;
